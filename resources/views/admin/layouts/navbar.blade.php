@@ -13,17 +13,17 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Beranda </a>
+                        <a href="{{ route('admin.dashboard') }}"> <i class="menu-icon fa fa-dashboard"></i>Beranda </a>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Manajemen Data</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Pegawai</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Bidang</a></li>
-                            <li><i class="fa fa-bars"></i><a href="ui-tabs.html">Jabatan</a></li>
-                            <li><i class="fa fa-share-square-o"></i><a href="ui-social-buttons.html">Atasan</a></li>
-                            <li><i class="fa fa-id-card-o"></i><a href="ui-cards.html">Kegiatan</a></li>
-                            <li><i class="fa fa-exclamation-triangle"></i><a href="ui-alerts.html">Manajemen User</a></li>
+                            <li><i class="fa fa-user"></i><a href="{{ route('admin.pegawai') }}">Pegawai</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="{{ route('admin.bidang') }}">Bidang</a></li>
+                            <li><i class="fa fa-bars"></i><a href="{{ route('admin.jabatan') }}">Jabatan</a></li>
+                            <li><i class="fa fa-share-square-o"></i><a href="{{ route('admin.atasan') }}">Atasan</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="{{ route('admin.kegiatan') }}">Kegiatan</a></li>
+                            <li><i class="fa fa-exclamation-triangle"></i><a href="{{ route('admin.user') }}">Manajemen User</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
@@ -33,10 +33,10 @@
                         </ul>
                     </li>
                     <li class="">
-                        <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Laporan </a>
+                        <a href="index.html"> <i class="menu-icon fa fa-book"></i>Laporan </a>
                     </li>
                     <li class="">
-                        <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Keluar </a>
+                        <a href="index.html"> <i class="menu-icon fa fa-power-off"></i>Keluar </a>
                     </li>
 
                 </ul>

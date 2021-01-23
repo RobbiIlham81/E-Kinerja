@@ -41,6 +41,21 @@ return [
             'provider' => 'users',
         ],
 
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+
+        'manajer' => [
+            'driver' => 'session',
+            'provider' => 'manajers',
+        ],
+
+        'karyawan' => [
+            'driver' => 'session',
+            'provider' => 'karyawans',
+        ],
+
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
@@ -70,6 +85,23 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Admin::class,
+        ],
+
+        'manajers' => [
+            'driver' => 'eloquent',
+            'model' => App\Manajer::class,
+        ],
+
+        'karyawans' => [
+            'driver' => 'eloquent',
+            'model' => App\Karyawan::class,
+        ],
+
+        
 
         // 'users' => [
         //     'driver' => 'database',
