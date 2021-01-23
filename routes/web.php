@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::namespace('Admin')->prefix('admin')->group(function () { 
     Route::get('/', ['as' => 'admin', 'uses' => 'DashboardController@index']);
 });
+
+Route::namespace('Auth')->prefix('auth')->group(function () {
+    Route::get('/login', ['as' => 'login', 'uses' => 'LoginController@loginIndex'])->middleware('guest');
+});
