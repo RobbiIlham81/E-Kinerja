@@ -74,4 +74,15 @@ class ManajemenController extends Controller {
 
         return view('admin.manajemen.user', $data);
     }
+
+    public function indexKinerja() {
+
+        $kinerja = DB::select('SELECT * FROM kinerja');
+
+        $data = array(
+            'kinerja' => $kinerja
+        );
+
+        return view('admin.kerja.kinerja', $data);
+    }
 }

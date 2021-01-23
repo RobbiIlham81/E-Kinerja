@@ -29,14 +29,14 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Manajemen Kerja</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Kinerja</a></li>
+                            <li><i class="fa fa-puzzle-piece"></i><a href="{{ route('admin.kinerja') }}">Kinerja</a></li>
                         </ul>
                     </li>
                     <li class="">
                         <a href="index.html"> <i class="menu-icon fa fa-book"></i>Laporan </a>
                     </li>
                     <li class="">
-                        <a href="index.html"> <i class="menu-icon fa fa-power-off"></i>Keluar </a>
+                        <a href="{{ route('login') }}"> <i class="menu-icon fa fa-power-off"></i>Keluar </a>
                     </li>
 
                 </ul>

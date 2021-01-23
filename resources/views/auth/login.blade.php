@@ -60,7 +60,7 @@
                                 <input type="password" class="form-control" placeholder="Password">
                         </div>
                                 
-                        <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Sign in</button>
+                        <a href="{{ route('admin.dashboard') }}" type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Login </a>
                              
                     </form>
                 </div>

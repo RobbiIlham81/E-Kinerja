@@ -23,6 +23,7 @@ Route::namespace('Admin')->prefix('admin')->group(function () {
     Route::get('/manajemen/atasan', ['as' => 'admin.atasan', 'uses' => 'ManajemenController@indexAtasan']);
     Route::get('/manajemen/kegiatan', ['as' => 'admin.kegiatan', 'uses' => 'ManajemenController@indexKegiatan']);
     Route::get('/manajemen/user', ['as' => 'admin.user', 'uses' => 'ManajemenController@indexUser']);
+    Route::get('/manajemen/kinerja', ['as' => 'admin.kinerja', 'uses' => 'ManajemenController@indexKinerja']);
 });
 
 Route::namespace('Auth')->prefix('auth')->group(function () {
